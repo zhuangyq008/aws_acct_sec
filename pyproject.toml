@@ -1,0 +1,17 @@
+[project]
+name = "aws-account-hardening"
+version = "0.1.0"
+description = "AWS 账号安全加固工具（CloudShell 引导式）"
+requires-python = ">=3.9"
+dependencies = ["boto3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "UP"]
+ignore = ["E501", "UP007", "UP045"]
